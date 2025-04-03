@@ -35,12 +35,3 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
-
-  vim.api.nvim_create_autocmd("FileType", {
-    pattern = "gitcommit",
-    callback = function()
-      vim.opt.laststatus = 0 -- Hide statusline
-      vim.cmd("silent! bd! #") -- Close previous buffer if needed
-    end,
-  })
-}
