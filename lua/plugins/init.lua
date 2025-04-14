@@ -19,21 +19,34 @@ return {
   },
 
   {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
-  		ensure_installed = {
-  			"vim", "lua", "vimdoc",
-        "html", "css", "javascript", "typescript",
-        "json", "yaml", "markdown", "markdown_inline",
-        "bash", "dockerfile", "git_rebase", "gitcommit",
-        "gitignore", "graphql", "regex", "rust",
-        "go", "gomod", "gosum", "gowork", "hcl",
-        "proto", "sql", "toml", "tsx", "vue",
-        "svelte", "scss", "scssdoc", "zls", "zig",
-        "rust-analyzer", "jsonc",
-  		},
-  	},
+    "CopilotC-Nvim/CopilotChat.nvim",
+    dependencies = {
+      { "github/copilot.vim" }, -- or zbirenbaum/copilot.lua
+      { "nvim-lua/plenary.nvim", branch = "master" }, -- for curl, log and async functions
+    },
+    build = "make tiktoken", -- Only on MacOS or Linux
+    opts = {
+      -- See Configuration section for options
+    },
+    -- See Commands section for default commands if you want to lazy load on them
   },
+
+  -- {
+  -- 	"nvim-treesitter/nvim-treesitter",
+  -- 	opts = {
+  -- 		ensure_installed = {
+  -- 			"vim", "lua", "vimdoc",
+  --       "html", "css", "javascript", "typescript",
+  --       "json", "yaml", "markdown", "markdown_inline",
+  --       "bash", "dockerfile", "git_rebase", "gitcommit",
+  --       "gitignore", "graphql", "regex", "rust",
+  --       "go", "gomod", "gosum", "gowork", "hcl",
+  --       "proto", "sql", "toml", "tsx", "vue",
+  --       "svelte", "scss", "scssdoc", "zls", "zig",
+  --       "rust-analyzer", "jsonc",
+  -- 		},
+  -- 	},
+  -- },
 }
 
 -- <3
