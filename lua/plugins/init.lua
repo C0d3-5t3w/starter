@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = 'BufWritePre', 
+    event = 'BufWritePre',
     opts = require "configs.conform",
   },
 
@@ -14,7 +14,7 @@ return {
 
   {
     "github/copilot.vim",
-    lazy = false, 
+    lazy = false,
   },
 
   {
