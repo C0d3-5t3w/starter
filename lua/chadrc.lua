@@ -21,6 +21,4 @@ M.base46 = {
 --      }
 --}
 
-M.plugins = "custom.plugins"
-
 return M
