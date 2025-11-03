@@ -1,0 +1,5 @@
+require("nvim-tree").setup({
+  filters = {
+    git_ignored = false, -- show .gitignore files
+  },
+})

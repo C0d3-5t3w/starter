@@ -67,6 +67,15 @@ return {
   -- 		},
   -- 	},
   -- },
+  --
+
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = function()
+      return require("custom.configs.nvimtree")
+    end,
+  },
+
 }
 
 -- <3
